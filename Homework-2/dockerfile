@@ -2,7 +2,7 @@ FROM ollama/ollama
 
 WORKDIR /root/.ollama 
 
-COPY ./ollama_files /root/.ollama
+COPY ollama_files
 
 EXPOSE 11434
 
