@@ -7,10 +7,12 @@ import io
 import requests
 import docx
 
+doc_id = '1T3MdwUvqCL3jrh3d3VCXQ8xE0UqRzI3bfgpfBq3ZWG0'
+# doc_id = '1m2KexowAXTmexfC5rVTCSnaShvdUQ8Ag2IEiwBDHxN0'
 
 @data_loader
 def load_data(*args, **kwargs):
-    url = 'https://docs.google.com/document/d/1m2KexowAXTmexfC5rVTCSnaShvdUQ8Ag2IEiwBDHxN0/export?format=docx'
+    url = f'https://docs.google.com/document/d/{doc_id_}/export?format=docx'
     
     doc = download_and_parse_doc(url)
     
